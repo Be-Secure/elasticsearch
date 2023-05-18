@@ -62,7 +62,8 @@ jobs:
           sudo apt install docker-ce docker-ce-cli containerd.io
           sudo systemctl status docker
           
-
+    - name: Checkout code
+      uses: actions/checkout@v2
           
 
     # Autobuild attempts to build any compiled languages  (C/C++, C#, Go, or Java).
